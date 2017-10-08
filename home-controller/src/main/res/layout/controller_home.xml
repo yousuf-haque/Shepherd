@@ -1,35 +1,48 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                             xmlns:app="http://schemas.android.com/apk/res-auto"
-                                             xmlns:tools="http://schemas.android.com/tools"
-                                             android:orientation="vertical"
+              xmlns:app="http://schemas.android.com/apk/res-auto"
+              xmlns:tools="http://schemas.android.com/tools"
               android:layout_width="match_parent"
-              android:layout_height="match_parent">
+              android:layout_height="match_parent"
+              android:orientation="vertical">
+
     <Button
+        android:id="@+id/btn_simple_screen"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/number_flow"
-        />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/letter_flow"
-        />
-    <Button
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/letter_number_flow"
+        android:text="@string/simple_screen"
         />
 
     <Button
+        android:id="@+id/btn_simple_flow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/simple_flow"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/btn_sequantial_flow"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/sequential_flow"
+        android:visibility="gone"
+        />
+
+    <Button
+        android:id="@+id/btn_nested_flow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/nested_flow"
+        android:visibility="gone"
         />
+
     <Button
+        android:id="@+id/branching_flow"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/branching_flow"
+        android:visibility="gone"
         />
 
 </LinearLayout>

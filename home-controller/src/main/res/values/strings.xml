@@ -5,4 +5,8 @@
     <string name="letter_number_flow"><![CDATA[Letter -> Number Flow]]></string>
     <string name="nested_flow">Nested Flow</string>
     <string name="branching_flow">Branching Flow</string>
+    <string name="simple_screen">Simple Screen</string>
+    <string name="simple_flow">Simple Flow</string>
+    <string name="composed_flow">Composed Flow</string>
+    <string name="sequential_flow">Sequential Flow</string>
 </resources>

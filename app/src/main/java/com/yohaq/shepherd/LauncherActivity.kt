@@ -2,6 +2,7 @@ package com.yohaq.shepherd
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 import com.bluelinelabs.conductor.Conductor
 import com.bluelinelabs.conductor.Router
 import com.bluelinelabs.conductor.RouterTransaction
@@ -20,7 +21,7 @@ class LauncherActivity : AppCompatActivity() {
         router = Conductor.attachRouter(this, container_chfl, savedInstanceState)
 
         if(!router.hasRootController()){
-            router.pushController(RouterTransaction.with(SimpleController()))
+            router.pushController(RouterTransaction.with(SimpleController("1").also { it.onNext.subscribe { Log.d(TAG, "next clicked inside flow") } }))
         }
     }
 
@@ -28,5 +29,9 @@ class LauncherActivity : AppCompatActivity() {
         if(!router.handleBack()) {
             super.onBackPressed()
         }
+    }
+
+    companion object {
+        private val TAG = LauncherActivity::class.java.simpleName!!
     }
 }

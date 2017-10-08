@@ -24,11 +24,12 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(":simple-screen-controller")
-    compile project(":rxextensions")
-    compile libraries.rx
-    compile libraries.conductor
-    compile libraries.kotlin
-    testCompile libraries.junit
-    androidTestCompile libraries.espresso
+    compile project(submodules.simpleController)
+    compile project(submodules.rxExtensions)
+    compile project(submodules.conductorExtensions)
+    compile libraries.compile.rx
+    compile libraries.compile.conductor
+    compile libraries.compile.kotlin
+    testCompile libraries.testCompile.junit
+    androidTestCompile libraries.androidTestCompile.espresso
 }

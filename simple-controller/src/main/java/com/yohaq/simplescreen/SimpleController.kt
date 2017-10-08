@@ -15,7 +15,7 @@ import kotlinx.android.synthetic.main.controller_simple_screen.view.*
 /**
  * Created by yousufhaque on 10/7/17.
  */ class SimpleController(bundle: Bundle): Controller(bundle) {
-    constructor(content: String): this(Bundle().apply { putString(content, CONTENT) })
+    constructor(content: String): this(Bundle().apply { putString(CONTENT, content) })
 
     private val content: String = bundle.getString(CONTENT)
 

@@ -24,11 +24,12 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':simple-screen-controller')
-    compile libraries.kotlin
-    compile libraries.support
-    compile libraries.rx
-    compile libraries.conductor
+    compile project(submodules.simpleController)
+    compile project(submodules.homeController)
+    compile libraries.compile.kotlin
+    compile libraries.compile.support
+    compile libraries.compile.rx
+    compile libraries.compile.conductor
 }
 repositories {
     mavenCentral()

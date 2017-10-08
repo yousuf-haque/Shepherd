@@ -24,10 +24,10 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile libraries.kotlin
-    compile libraries.support
-    compile libraries.rx
-    compile libraries.conductor
-    testCompile libraries.junit
-    androidTestCompile libraries.espresso
+    compile libraries.compile.kotlin
+    compile libraries.compile.support
+    compile libraries.compile.rx
+    compile libraries.compile.conductor
+    testCompile libraries.testCompile.junit
+    androidTestCompile libraries.androidTestCompile.espresso
 }

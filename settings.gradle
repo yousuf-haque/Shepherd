@@ -1,1 +1,1 @@
-include ':app', ':simple-screen-controller', ':home-controller', ':androidextensions', ':rxextensions', ':conductorextensions', ':simpleflow'
+include ':app', ':simple-controller', ':home-controller', ':android-extensions', ':rx-extensions', ':conductor-extensions', ':simple-flow'

@@ -1,5 +1,6 @@
 apply plugin: 'com.android.library'
-
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
 android {
     compileSdkVersion 26
     buildToolsVersion "25.0.2"
@@ -23,7 +24,9 @@ android {
 
 dependencies {
     compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile libraries.kotlin
-    compile libraries.junit
-    compile libraries.rx
+    compile project(submodules.conductorExtensions)
+    compile libraries.compile.kotlin
+    compile libraries.compile.support
+    compile libraries.compile.rx
+    compile libraries.compile.conductor
 }
