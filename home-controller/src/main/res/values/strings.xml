@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Home Controller</string>
+    <string name="number_flow">Number Flow</string>
+    <string name="letter_flow">Letter Flow</string>
+    <string name="letter_number_flow"><![CDATA[Letter -> Number Flow]]></string>
+    <string name="nested_flow">Nested Flow</string>
+    <string name="branching_flow">Branching Flow</string>
+</resources>
